@@ -1,0 +1,34 @@
+@import "../abstracts/variables";
+
+main {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .content {
+    padding: calc($gutter-base - 10px);
+    background-color: $text-color-secondary;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px 10px #88888815;
+
+    .qr {
+      width: 350px;
+      img {
+        border-radius: 10px;
+      }
+    }
+    .text-box {
+      padding: 0 $gutter-base;
+      text-align: center;
+      width: 350px;
+      h2 {
+        color: $text-color-primary;
+        font-weight: $font-weight-bold;
+      }
+      p {
+        color: $text-color-base;
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
+}
